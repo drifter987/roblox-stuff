@@ -49,7 +49,7 @@ end
 
 function drift.log(text)
 text = ""
-print(string.format("drift-lib: %s", text))
+print(string.format("drift-lib: %s", type(text)))
 end
 
 _G.drift = drift  -- Assign the drift table to _G.drift
