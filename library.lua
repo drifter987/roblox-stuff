@@ -51,4 +51,7 @@ function drift.log(text)
 print(string.format("drift-lib: %s", text))
 end
 
+_G.drift = drift  -- Assign the drift table to _G.drift
+_G.log = drift.log -- Assign the log function to _G.log (or _G.drift.log)
+
 return drift
