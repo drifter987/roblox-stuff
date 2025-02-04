@@ -48,7 +48,7 @@ function drift.line(partPosition)
 end
 
 function drift.log(text)
-print(string.format(("drift-lib: %s", text))
+print(string.format("drift-lib: %s", text))
 end
 
 return drift
