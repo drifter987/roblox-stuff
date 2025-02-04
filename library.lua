@@ -49,7 +49,11 @@ end
 
 function drift.log(text)
 text = ""
-print(string.format("drift-lib: %s", type(text)))
+    if type(text) ~= "string" then
+        print("drift-lib: "..text)
+    else
+        print(string.format("drift-lib: %s", text))
+    end
 end
 
 _G.drift = drift  -- Assign the drift table to _G.drift
